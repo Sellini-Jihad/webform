@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="section1">
+        <h1 class="titre"> welcome </h1>
+    </div>
+    <div class="formulaire">
+        <form action="" id="inscription_form">
+            <label for="nom">nom</label>
+            <input type="text" id="nom" name="name">
+            <label for="prenom">prenom</label>
+            <input type="text" id="prenom" name="prenom">
+            <label for="email">email</label>
+            <input type="text" id="email" name="email">
+            <button type="submit"> submit </button>
+        </form>
+    </div id="resultat">
+    <h2>resultat d'inscri</h2>
+    <p id="nomresult" ></p>
+    <p id="prenomresult" ></p>
+    <p id="mailresult" ></p>
+    <div>
+
+    </div>
+    <script>
+        document.getElementById('inscription_form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            document.getElementById('nomresult').textContent = ' Nom: ' + document.getElementById('nom').value;
+            document.getElementById('prenomresult').textContent = ' Prenom: ' + document.getElementById('prenom').value;
+            document.getElementById('mailresult').textContent = ' email: ' + document.getElementById('email').value;
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+
+.titre {
+    color: aqua;
+}
+
+.section1 {
+    /* background-color: red; */
+    /* use display then flex , justify content to move the placement of any part of the code */
+    display: flex;
+    justify-content: center;
+    /* distance between the wri */
+    padding: 10px;
+}
+.formulaire{
+    display: flex;
+    justify-content: center;
+  
+}
+form{
+    color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    width: 30% ;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    
+}
+button{
+    background-color: brown;
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+    
+}
